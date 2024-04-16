@@ -6,6 +6,7 @@
 return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.scrolling.nvim-scrollbar" },
+  { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.editing-support.nvim-devdocs" },
   { import = "astrocommunity.editing-support.neogen" },
   { import = "astrocommunity.editing-support.rainbow-delimiters-nvim" },
