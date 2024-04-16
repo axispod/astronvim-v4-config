@@ -27,9 +27,12 @@ return {
       opt = { -- vim.opt.<key>
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
-        spell = false, -- sets vim.opt.spell
+        spell = true, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
+        shiftwidth = 4,
+        softtabstop = 4,
+        tabstop = 4
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -62,7 +65,14 @@ return {
         ["<Leader>b"] = { desc = "Buffers" },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
-        ["vv"] = { "`[v`]", desc = "Select Yanked Block" }
+        ["vv"] = { "`[v`]", desc = "Select Yanked Block" },
+        ["<leader>n"] = { desc = " Package Info" },
+        ["<leader>nd"] = { "<cmd>lua require('package-info').delete()<cr>", desc = "Delete" },
+        ["<leader>np"] = { "<cmd>lua require('package-info').change_version()<cr>", desc = "Change Version" },
+        ["<leader>ni"] = { "<cmd>lua require('package-info').install()<cr>", desc = "Install" },
+      },
+      i = {
+        ["<C-z>"] = { "<C-o>u" }
       },
       t = {
         -- setting a mapping to false will disable it
