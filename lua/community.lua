@@ -39,5 +39,4 @@ return {
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.zig" },
-  { import = "astrocommunity.project.projectmgr-nvim" },
 }
